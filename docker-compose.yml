@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  turn-server:
+    image: 'thevirtproject/turn-server:latest'
+    container_name: turn-server
+    network_mode: 'host'
+    environment:
+      - TURN_SERVER_NAME=localhost
+      - TURN_EXTERNAL_IP=127.0.0.1
+
