@@ -2,7 +2,7 @@ version: '3.7'
 
 services:
   turn-server:
-    image: 'thevirtproject/turn-server:latest'
+    image: 'coconutsrule/turn-server:latest'
     container_name: turn-server
     network_mode: 'host'
     environment:
